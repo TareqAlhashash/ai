@@ -36,6 +36,20 @@ jobs:
           npm run setup
           npm run dev:daemon
 
+      #TAREQ
+      - name: Wait for dev server
+        run: |
+          for i in $(seq 1 30); do
+            if curl -sf http://localhost:3000 > /dev/null; then
+              echo "Server is up"
+              exit 0
+            fi
+            sleep 1
+          done
+          echo "Server did not start in time" >&2
+          cat logs.txt
+          exit 1
+
       - name: Run Claude Code
         id: claude
         uses: anthropics/claude-code-action@v1
@@ -65,7 +79,7 @@ jobs:
               }
             }    
            #TAREQ
-          allowed_tools: "Bash(npm:*),Bash(sqlite3:*),mcp__playwright__browser_snapshot,mcp__playwright__browser_click,..."
+          allowed_tools: "Bash(npm:*),Bash(sqlite3:*),mcp__playwright__browser_snapshot,mcp__playwright__browser_click,mcp__playwright__browser_type,mcp__playwright__browser_navigate,mcp__playwright__browser_navigate_back,mcp__playwright__browser_evaluate,mcp__playwright__browser_wait_for,mcp__playwright__browser_console_messages,mcp__playwright__browser_take_screenshot,mcp__playwright__browser_select_option,mcp__playwright__browser_hover,mcp__playwright__browser_press_key,mcp__playwright__browser_fill_form,mcp__playwright__browser_drag,mcp__playwright__browser_drop,mcp__playwright__browser_tabs,mcp__playwright__browser_file_upload,mcp__playwright__browser_handle_dialog,mcp__playwright__browser_resize,mcp__playwright__browser_network_requests,mcp__playwright__browser_close"
  
             # This is an optional setting that allows Claude to read CI results on PRs
           additional_permissions: |
