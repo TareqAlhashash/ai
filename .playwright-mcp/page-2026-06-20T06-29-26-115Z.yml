@@ -1,0 +1,149 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - heading "React Component Generator" [level=1] [ref=e7]
+      - generic [ref=e9]:
+        - generic [ref=e12]:
+          - generic [ref=e48]:
+            - generic [ref=e51]: Create a simple button component
+            - img [ref=e54]
+          - generic [ref=e57]:
+            - img [ref=e60]
+            - generic [ref=e65]:
+              - generic [ref=e68]:
+                - img [ref=e69]
+                - text: Creating App.jsx
+              - separator [ref=e72]
+              - generic [ref=e75]:
+                - img [ref=e76]
+                - text: Creating Button.jsx
+              - separator [ref=e79]
+              - paragraph [ref=e81]: Done! Created a reusable Button component with primary, secondary, and danger variants, plus disabled state support.
+          - generic [ref=e418]:
+            - generic [ref=e421]: Create a simple button component
+            - img [ref=e424]
+          - generic [ref=e480]:
+            - img [ref=e483]
+            - generic [ref=e488]:
+              - generic [ref=e491]:
+                - img [ref=e492]
+                - text: Creating App.jsx
+              - separator [ref=e495]
+              - generic [ref=e498]:
+                - img [ref=e499]
+                - text: Editing App.jsx
+              - separator [ref=e503]
+              - generic [ref=e506]:
+                - img [ref=e507]
+                - text: Editing Button.jsx
+              - separator [ref=e511]
+              - paragraph [ref=e513]: Done! Updated with a more refined button component featuring indigo, slate, and amber variants with shadow effects and smooth interactions.
+        - generic [ref=e20]:
+          - textbox "Describe the React component you want to create..." [ref=e21]
+          - button [disabled] [ref=e22]:
+            - img [ref=e23]
+    - separator [ref=e26]
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - tablist [ref=e31]:
+          - tab "Preview" [ref=e32]
+          - tab "Code" [selected] [ref=e33]
+        - generic [ref=e34]:
+          - button "Sign In" [ref=e35]
+          - button "Sign Up" [ref=e36]
+      - generic [ref=e83]:
+        - generic [ref=e514]:
+          - generic [ref=e515]:
+            - generic [ref=e516] [cursor=pointer]:
+              - img [ref=e517]
+              - img [ref=e519]
+              - generic [ref=e521]: components
+            - generic [ref=e524] [cursor=pointer]:
+              - img [ref=e525]
+              - generic [ref=e530]: Button.jsx
+          - generic [ref=e532] [cursor=pointer]:
+            - img [ref=e533]
+            - generic [ref=e538]: App.jsx
+        - separator [ref=e114]
+        - code [ref=e119]:
+          - generic [ref=e120]:
+            - generic [ref=e122]:
+              - generic [ref=e539]:
+                - generic [ref=e540] [cursor=pointer]: 
+                - generic [ref=e541]: "1"
+              - generic [ref=e127]: "2"
+              - generic [ref=e239]: "3"
+              - generic [ref=e241]: "4"
+              - generic [ref=e243]: "5"
+              - generic [ref=e245]: "6"
+              - generic [ref=e141]: "7"
+              - generic [ref=e542]:
+                - generic [ref=e543] [cursor=pointer]: 
+                - generic [ref=e544]: "8"
+              - generic [ref=e145]: "9"
+              - generic [ref=e147]: "10"
+              - generic [ref=e545]:
+                - generic [ref=e546] [cursor=pointer]: 
+                - generic [ref=e547]: "11"
+              - generic [ref=e151]: "12"
+              - generic [ref=e153]: "13"
+              - generic [ref=e155]: "14"
+              - generic [ref=e157]: "15"
+              - generic [ref=e253]: "16"
+              - generic [ref=e255]: "17"
+              - generic [ref=e257]: "18"
+              - generic [ref=e548]:
+                - generic [ref=e549] [cursor=pointer]: 
+                - generic [ref=e550]: "19"
+              - generic [ref=e551]:
+                - generic [ref=e552] [cursor=pointer]: 
+                - generic [ref=e553]: "20"
+              - generic [ref=e265]: "21"
+              - generic [ref=e268]: "22"
+              - generic [ref=e270]: "23"
+              - generic [ref=e272]: "24"
+              - generic [ref=e554]:
+                - generic [ref=e555] [cursor=pointer]: 
+                - generic [ref=e556]: "25"
+              - generic [ref=e277]: "26"
+              - generic [ref=e562]: "27"
+              - generic [ref=e564]: "28"
+              - generic [ref=e566]: "29"
+              - generic [ref=e569]: "30"
+            - generic [ref=e203]:
+              - generic [ref=e590]: "export default function Button({"
+              - generic [ref=e592]: children,
+              - generic [ref=e594]: variant = 'primary',
+              - generic [ref=e596]: disabled = false,
+              - generic [ref=e598]: onClick,
+              - generic [ref=e600]: className = '',
+              - generic [ref=e602]: ...props
+              - generic [ref=e604]: "}) {"
+              - generic [ref=e606]: const baseStyles = 'px-6 py-2.5 rounded-lg font-semibold text-sm transition-all
+              - generic [ref=e608]: "const variants = {"
+              - generic [ref=e610]: "primary: 'bg-indigo-600 text-white hover:bg-indigo-700 hover:shadow-lg"
+              - generic [ref=e612]: "secondary: 'bg-slate-700 text-slate-100 hover:bg-slate-600 hover:shadow-lg"
+              - generic [ref=e614]: "accent: 'bg-amber-500 text-slate-900 hover:bg-amber-400 hover:shadow-lg"
+              - generic [ref=e616]: "};"
+              - generic [ref=e618]: const variantStyles = variants[variant] || variants.primary;
+              - generic [ref=e620]: return (
+              - generic [ref=e622]: <button
+              - generic [ref=e624]: "className={`${baseStyles} ${variantStyles} ${disabled ? 'cursor-not-allowed"
+              - generic [ref=e626]: "opacity-60' : 'cursor-pointer'} ${className}`}"
+              - generic [ref=e628]: "disabled={disabled}"
+              - generic [ref=e630]: "onClick={onClick}"
+              - generic [ref=e632]: "{...props}"
+              - generic [ref=e634]: ">"
+              - generic [ref=e636]: "{children}"
+              - generic [ref=e638]: duration-200 active:scale-95';
+              - generic [ref=e640]: hover:shadow-indigo-500/30 disabled:bg-indigo-400 disabled:shadow-none',
+              - generic [ref=e642]: hover:shadow-slate-700/30 disabled:bg-slate-600 disabled:shadow-none',
+              - generic [ref=e644]: hover:shadow-amber-500/30 disabled:bg-amber-300 disabled:shadow-none',
+              - generic [ref=e646]: </button>
+              - generic [ref=e648]: );
+              - generic [ref=e650]: "}"
+            - textbox "Editor content" [ref=e233]: "{children} </button> ); }"
+  - alert [ref=e47]
+  - generic [ref=e234]:
+    - alert
+    - alert

@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(node --version)",
+      "PowerShell(nvm list 2>&1)",
+      "PowerShell(nvm list available 2>&1)",
+      "PowerShell(cd D:\\\\projects\\\\uigen; $env:NEXT_TELEMETRY_DISABLED=1; $proc = Start-Process -FilePath \"npm\" -ArgumentList \"run\",\"dev\" -PassThru -NoNewWindow -RedirectStandardOutput \".\\\\dev-out.txt\" -RedirectStandardError \".\\\\dev-err.txt\"; Start-Sleep -Seconds 10; Get-Content .\\\\dev-out.txt, .\\\\dev-err.txt -ErrorAction SilentlyContinue; Stop-Process -Id $proc.Id -Force -ErrorAction SilentlyContinue)",
+      "Bash(timeout 10 npm run dev)",
+      "Skill(claude-api)",
+      "Skill(claude-api:*)",
+      "mcp__visualize__show_widget",
+      "Bash(npx vitest *)",
+      "WebSearch",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "PowerShell(Get-NetTCPConnection *)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_type",
+      "mcp__playwright",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_click",
+      "Bash(gh *)",
+      "PowerShell(Get-Command *)",
+      "PowerShell(Test-Path \"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\"; [Environment]::GetEnvironmentVariable\\(\"PATH\",\"Machine\"\\) -split ';' | Select-String \"GitHub\")",
+      "PowerShell(gh *)",
+      "PowerShell(& \"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" --version)",
+      "Bash(where.exe gh *)",
+      "Read(//c/Program Files/GitHub CLI//**)",
+      "Read(//c/Users/dmc/AppData/Local/**)",
+      "Read(//c/Program Files \\(x86\\)/**)",
+      "PowerShell([Environment]::GetEnvironmentVariable\\(\"Path\",\"Machine\"\\) + \"`n---USER---`n\" + [Environment]::GetEnvironmentVariable\\(\"Path\",\"User\"\\))",
+      "Bash(powershell.exe -NoProfile -Command \"\\(Get-Command gh\\).Source\")",
+      "PowerShell([Environment]::GetEnvironmentVariable\\(\"Path\", \"User\"\\))",
+      "PowerShell([Environment]::GetEnvironmentVariable\\(\"Path\", \"Machine\"\\))"
+    ]
+  }
+}

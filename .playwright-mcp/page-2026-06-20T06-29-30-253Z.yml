@@ -1,0 +1,63 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - heading "React Component Generator" [level=1] [ref=e7]
+      - generic [ref=e9]:
+        - generic [ref=e12]:
+          - generic [ref=e48]:
+            - generic [ref=e51]: Create a simple button component
+            - img [ref=e54]
+          - generic [ref=e57]:
+            - img [ref=e60]
+            - generic [ref=e65]:
+              - generic [ref=e68]:
+                - img [ref=e69]
+                - text: Creating App.jsx
+              - separator [ref=e72]
+              - generic [ref=e75]:
+                - img [ref=e76]
+                - text: Creating Button.jsx
+              - separator [ref=e79]
+              - paragraph [ref=e81]: Done! Created a reusable Button component with primary, secondary, and danger variants, plus disabled state support.
+          - generic [ref=e418]:
+            - generic [ref=e421]: Create a simple button component
+            - img [ref=e424]
+          - generic [ref=e480]:
+            - img [ref=e483]
+            - generic [ref=e488]:
+              - generic [ref=e491]:
+                - img [ref=e492]
+                - text: Creating App.jsx
+              - separator [ref=e495]
+              - generic [ref=e498]:
+                - img [ref=e499]
+                - text: Editing App.jsx
+              - separator [ref=e503]
+              - generic [ref=e506]:
+                - img [ref=e507]
+                - text: Editing Button.jsx
+              - separator [ref=e511]
+              - paragraph [ref=e513]: Done! Updated with a more refined button component featuring indigo, slate, and amber variants with shadow effects and smooth interactions.
+        - generic [ref=e20]:
+          - textbox "Describe the React component you want to create..." [ref=e21]
+          - button [disabled] [ref=e22]:
+            - img [ref=e23]
+    - separator [ref=e26]
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - tablist [ref=e31]:
+          - tab "Preview" [active] [selected] [ref=e32]
+          - tab "Code" [ref=e33]
+        - generic [ref=e34]:
+          - button "Sign In" [ref=e35]
+          - button "Sign Up" [ref=e36]
+      - iframe [ref=e653]:
+        - generic [ref=f4e4]:
+          - button "Primary" [ref=f4e5] [cursor=pointer]
+          - button "Secondary" [ref=f4e6] [cursor=pointer]
+          - button "Accent" [ref=f4e7] [cursor=pointer]
+          - button "Disabled" [disabled] [ref=f4e8]
+  - alert [ref=e47]
+  - generic [ref=e234]:
+    - alert
+    - alert

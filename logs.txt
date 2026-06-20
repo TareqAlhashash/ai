@@ -1,0 +1,14 @@
+ ⚠ Port 3000 is in use, using available port 3001 instead.
+   ▲ Next.js 15.3.9 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.20.19:3001
+   - Environments: .env
+
+ ✓ Starting...
+ ⚠ Invalid next.config.ts options detected: 
+ ⚠     Unrecognized key(s) in object: 'root' at "turbopack"
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+ ✓ Compiled middleware in 452ms
+ ✓ Ready in 4.2s
+ ○ Compiling / ...
+ ✓ Compiled / in 11.5s
